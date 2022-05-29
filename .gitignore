@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Build dirs
+[Bb]uild/
+
+# VS Code shit
+.vscode/
