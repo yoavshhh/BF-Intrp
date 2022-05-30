@@ -8,7 +8,7 @@ const std::map<char, OpCode> Operation::ops_map = {
         {'+', OpCode::PLUS},
         {'-', OpCode::MINUS},
         {'.', OpCode::DOT},
-        {',', OpCode::COMMA}
+        {',', OpCode::COMMA},
 };
 
 Operation::Operation(const OpCode& opCode) {

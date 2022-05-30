@@ -4,9 +4,10 @@
 #include <map>
 
 enum class OpCode {
-    TOP,
-	OPEN_BRACKET, CLOSE_BRACKET, RIGHT, LEFT, PLUS, MINUS, DOT, COMMA,
-    CNT,
+    TOP,                                                                    // Default top node
+	OPEN_BRACKET, CLOSE_BRACKET, RIGHT, LEFT, PLUS, MINUS, DOT, COMMA,      // Brainfuck characters
+                                                                            // Additional characters in use
+    CNT,                                                                    // Count them all
 };
 
 

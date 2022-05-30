@@ -1,12 +1,14 @@
 #include "parser.h"
 
+bool Parser::m_ShouldParse = true;
+
 Parser::Parser() {}
 
 void Parser::SetString(const std::string& str) {
     m_Cmd = str;
 }
 
-void Parser::m_Rec_Parse(size_t& ind, Operation* &op) const {
+void Parser::m_Rec_Parse(size_t& ind, Operation* &op) {
     if (ind >= m_Cmd.size()) return;
     // Operation not permitted - parsing as comment
     while (ind != m_Cmd.size())
@@ -28,7 +30,7 @@ void Parser::m_Rec_Parse(size_t& ind, Operation* &op) const {
     }
 }
 
-Operation* Parser::Parse() const {
+Operation* Parser::Parse() {
     Operation* op = new Operation(OpCode::TOP);
     
     size_t ind = 0;

@@ -1,6 +1,8 @@
 #pragma once
 
 #include <iostream>
+#include <string>
+#include <cctype>
 
 #include "brainfuck.h"
 #include "cmdline.h"
